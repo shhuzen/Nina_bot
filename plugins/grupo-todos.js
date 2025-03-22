@@ -1,5 +1,4 @@
 let handler = async (m, { conn }) => {
-
   const imageUrl = "https://i.ibb.co/JndpnfX/LynxAI.jpg";
 
   const mensaje = `
@@ -34,14 +33,13 @@ let handler = async (m, { conn }) => {
 
 🌐 *¿Tienes alguna sugerencia?*
 
-- 🟢 [ *DarkCore* ]( https://wa.me/+79170488669?text=Hola ) 
+- 🟢 [ *DarkCore* ]( https://wa.me/+79282517294?text=Hola ) 
 `;
 
-  await conn.sendFile(m.chat, imageUrl, "imagen.jpg", mensaje,m,rcanal,fake);
-
+  await conn.sendFile(m.chat, imageUrl, "imagen.jpg", mensaje, m, rcanal, fake);
 };
 
-handler.command = ['grupo', 'group', 'Grupos', 'GRUPO'];
-handler.tags = ['group'];
-handler.help = ['чапрвповапркыенвповыпароагншлспро'];
+handler.command = ["grupo", "group", "Grupos", "GRUPO"];
+handler.tags = ["group"];
+handler.help = ["чапрвповапркыенвповыпароагншлспро"];
 export default handler;
