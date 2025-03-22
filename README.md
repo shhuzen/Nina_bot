@@ -48,8 +48,7 @@ apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 
 ```bash
-[ -d "Nina_bot" ] && (cd Nina_bot && git pull origin main) || (git clone https://github.com/shhuzen/Nina_bot && cd Nina_bot)
-
+if [ -d "Nina_bot" ]; then cd Nina_bot && git pull origin main; else git clone https://github.com/shhuzen/Nina_bot && cd Nina_bot; fi
 ```
 
 ```bash
